@@ -1,9 +1,5 @@
-import { Room } from "./Room";
+import dynamic from "next/dynamic";
 
-export default function Page() {
-  return (
-    <Room>
-      <h1 className="text-4xl text-white">LiveBlocks Figma Clone</h1>
-    </Room>
-  );
-}
+const App = dynamic(() => import("./App"), { ssr: false });
+
+export default App;
