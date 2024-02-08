@@ -165,7 +165,6 @@ export const NewThread = ({ children }: Props) => {
         return;
       }
 
-      // Set coords relative to the top left of your canvas
       const { top, left } = overlayPanel.getBoundingClientRect();
       const x = composerCoords.x - left;
       const y = composerCoords.y - top;
