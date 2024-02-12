@@ -9,6 +9,9 @@ const nextConfig = {
     // config.infrastructureLogging = { debug: /PackFileCache/ };
     return config;
   },
+  env: {
+    APIKEY: process.env.KEY,
+  },
   images: {
     remotePatterns: [
       {
